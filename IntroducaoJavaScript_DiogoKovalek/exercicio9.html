@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Exercicio9</title>
+</head>
+<body>
+    <form>
+        <label for="largura">Largura do Terreno</label>
+        <input type = "number" id = "largura"/>
+        <br>
+
+        <label for="comprimento">Comprimento do Terreno</label>
+        <input type = "number" id = "comprimento"/>
+        <br>
+
+        <label for="valorMetro">Valor do Metro Quadrado</label>
+        <input type = "number" id="valorMetro"/>
+        <br>
+
+        <button type="button" onclick="calcular()">Calcular</button>
+
+        <h3>Area >>> <span id="Area"></span></h3>
+        <h3>Valor de Venda >>> <span id="ValorVenda"></span></h3>
+    </form>
+
+    <script>
+        function calcular(){
+            let largura = parseFloat(document.getElementById("largura").value);
+            let comprimento = parseFloat(document.getElementById("comprimento").value);
+            let valorMetro = parseFloat(document.getElementById("valorMetro").value);
+
+            let totalMetros = largura*comprimento;
+            let precoDeVenda = totalMetros*valorMetro;
+
+            document.getElementById("Area").textContent = totalMetros;
+            document.getElementById("ValorVenda").textContent = precoDeVenda;
+            
+        }
+    </script>
+</body>

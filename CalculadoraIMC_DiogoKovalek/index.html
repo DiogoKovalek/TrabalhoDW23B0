@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>calculadora</title>
+    <link rel='stylesheet' href="format.css">
+    <script src = "calcIMC.js"></script>
+</head>
+<body>
+    <div class = "fundo">
+        <div class="calculadora">
+            <p>
+            <h1><strong>Calculadora - IMC</strong></h1>
+            <hr>
+            </p>
+            <form>
+                <div class="Quadrado1">
+                    <p>
+                    <label for="Nome">Nome:</label>
+                    <input type = "text" id = "Nome"/>
+                    <br>
+                    </p>
+
+                    <p>
+                    <label for="Altura">Altura:</label>
+                    <input type = "number" id = "Altura"/>
+                    <br>
+                    </p>
+
+                    <p>
+                    <label for="Peso">Peso:</label>
+                    <input type = "number" id="Peso"/>
+                    <br>
+                    </p>
+
+                    <p>
+                    <button  type="button" onclick=calcular()>Calcular</button>
+                    </p>
+
+                    <div class="resposta">
+                        <p id = "IMC"><p>
+                    </div>
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

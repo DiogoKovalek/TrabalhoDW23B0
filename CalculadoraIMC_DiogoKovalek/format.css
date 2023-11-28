@@ -1,0 +1,40 @@
+:root{
+    --color:rgb(241, 241, 111);
+}
+
+*{
+    margin: 0;
+}
+
+.fundo{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.calculadora{
+    background-color: var(--color);
+    border-radius: 5px;
+    margin: 10px;    
+}
+.resposta{
+    background-color: black;
+    color: var(--color);
+    border-radius: 5px;
+}
+
+hr{
+    border-color: black;
+    size: 3;
+}
+
+p{
+    margin: 5px;
+}
+
+button{
+    background-color: black;
+    color: var(--color);
+}
